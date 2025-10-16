@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🎥 Background Video -->
+  <video autoplay muted loop class="background-video">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>
+      <img src="weather.png" style="width: 70px; height: 70px; vertical-align: middle;" alt="">
+      Real-Time Weather
+    </h1> 
+  </div>  
+
+  <!-- 🔍 Input -->
+  <div class="input">
+    <input type="text" id="cityInput" placeholder="Enter city or country...">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <!-- 🌦 Weather Cards -->
+  <div class="cards">
+    <div class="card1">
+      <i class="fas fa-cloud-sun fa-3x"></i>
+      <h2 id="weatherCondition">--</h2>
+      <p>Condition</p>
+    </div>
+    <div class="card2">
+      <i class="fas fa-temperature-high fa-3x"></i>
+      <h2 id="temperature">-- °C</h2>
+      <p>Temperature</p>
+    </div>
+    <div class="card3">
+      <i class="fas fa-wind fa-3x"></i>
+      <h2 id="wind">-- km/h</h2>
+      <p>Wind Speed</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
